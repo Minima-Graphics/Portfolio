@@ -12,7 +12,7 @@
 
         img {
             display: block;
-            width: window.innerWidth;
+            width: 100vu;
             max-width: 100%;
             height: auto;
             margin: 20px auto;
@@ -27,6 +27,18 @@
 
     <img src="AstriaTN_g191.png" alt="My design">
     <img src="AstriaTN_g190.png" alt="My design 2">
+
+    <script>
+      function displayWidth() {
+        let width = window.innerWidth;
+      }
+
+      // Run the function once when the page loads
+      displayWidth();
+
+      // Run the function every time the window is resized
+      window.addEventListener('resize', displayWidth);
+    </script>
 
 </body>
 </html>
